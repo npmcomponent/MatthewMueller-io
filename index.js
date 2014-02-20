@@ -9,20 +9,20 @@ var Emitter, qs, EIO;
  */
 
 try {
-  Emitter = require('emitter');
-  qs = require('querystring');
+  Emitter = require('component-emitter');
+  qs = require('component-querystring');
   EIO = require('engine.io');
 } catch(e) {
   Emitter = require('emitter-component');
   qs = require('qs');
-  EIO = require('engine.io-client');
+  EIO = require('LearnBoost-engine.io-client');
 }
 
 var emit = Emitter.prototype.emit;
 var on = Emitter.prototype.on;
 var once = Emitter.prototype.once;
-var parse = require('url').parse;
-var uid = require('uid');
+var parse = require('component-url').parse;
+var uid = require('matthewmueller-uid');
 var slice = [].slice;
 
 /**

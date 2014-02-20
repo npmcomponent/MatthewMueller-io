@@ -1,15 +1,18 @@
 {
-  "name": "io-component",
+  "name": "matthewmueller-io",
+  "description": "event emitter build on top of io",
   "version": "0.4.0",
+  "keywords": [
+    "engine.io",
+    "web sockets",
+    "ws"
+  ],
   "dependencies": {
-    "qs": "~0.6.5",
-    "emitter-component": "~1.0.0",
-    "engine.io-client": "~0.6.2",
-    "uid": "*"
+    "component-emitter": "git://github.com/npmcomponent/component-emitter.git",
+    "LearnBoost-engine.io-client": "git://github.com/npmcomponent/LearnBoost-engine.io-client.git",
+    "component-querystring": "git://github.com/npmcomponent/component-querystring.git",
+    "component-url": "git://github.com/npmcomponent/component-url.git",
+    "matthewmueller-uid": "git://github.com/npmcomponent/matthewmueller-uid.git"
   },
-  "devDependencies": {
-    "express": "*",
-    "io-server": "*",
-    "engine.io": "*"
-  }
+  "license": "MIT"
 }
